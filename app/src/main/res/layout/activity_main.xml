@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="dragosholban.com.androidpuzzlegame.MainActivity"
-    android:background="@drawable/table_background">
+    android:layout_height="match_parent">
 
     <GridView
         android:id="@+id/grid"
@@ -37,7 +36,10 @@
         android:src="@drawable/ic_photo_camera_black_24dp"
         android:tint="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:focusable="true"
+        tools:ignore="UsingOnClickInXml"
+        android:contentDescription="Camera Button" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/galleryButton"
